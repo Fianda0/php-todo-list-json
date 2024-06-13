@@ -11,7 +11,7 @@ createApp({
     },
     mounted() {
         axios.get('./server.php').then(risultato => {
-            console.log(risultato.data);
+            this.toDo = risultato.data;
         })
     }
 }).mount('#app')
