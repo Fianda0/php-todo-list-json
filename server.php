@@ -27,8 +27,8 @@ $toDO = [
     ]
 ];
 
-header('Content-Type; application/jason');
+header('Content-Type: application/json');
 
-$jasonString = json_encode($toDo);
+$jsonString = json_encode($toDO);
 
-echo $jasonString;
+echo $jsonString;
