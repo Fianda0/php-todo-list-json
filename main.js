@@ -3,7 +3,9 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            toDo: []
+            toDo: [],
+            orario: '',
+            azione: ''
         }
     },
     methods: {
