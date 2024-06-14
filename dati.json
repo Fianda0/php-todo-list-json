@@ -1,0 +1,26 @@
+[
+    {
+        "orario": "08: 30",
+        "azione": "Svegliarsi"
+    },
+    {
+        "orario": "09: 30",
+        "azione": "Iniziare lezione boolean"
+    },
+    {
+        "orario": "11: 00",
+        "azione": "Fare pausa caffè"
+    },
+    {
+        "orario": "13: 00",
+        "azione": "Pranzare"
+    },
+    {
+        "orario": "15: 00",
+        "azione": "Svolgere esercizi"
+    },
+    {
+        "orario": "17: 00",
+        "azione": "Andare a correre"
+    }
+]
