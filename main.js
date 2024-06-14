@@ -23,6 +23,7 @@ createApp({
 
             axios.post('./lista.php', newAction, this.postRequestConfig).then(result => {
                 console.log(newAction)
+                this.toDo = result.data
             });
         }
 

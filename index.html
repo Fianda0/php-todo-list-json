@@ -19,7 +19,7 @@
         <h2>Aggiungi cose da fare:</h2>
         <input type="time" placeholder="Inserire orario" v-model="orario">
         <input type="text" placeholder="Inserire Azione" v-model="azione">
-        <button @click="addElement()">Aggiungi</button>
+        <button v-if="azione.length >=3" @click="addElement()">Aggiungi</button>
 
         <h2>Lista cose da fare:</h2>
         <ul>
