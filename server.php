@@ -1,8 +1,9 @@
 <?php
 
+//recupero dati dal file json
+$file = file_get_contents("dati.json");
 
 header('Content-Type: application/json');
 
-$jsonString = json_encode($toDO);
-
-echo $jsonString;
+//stampo i file
+echo $file;
