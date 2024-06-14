@@ -5,14 +5,32 @@ createApp({
         return {
             toDo: [],
             orario: '',
-            azione: ''
+            azione: '',
+            postRequestConfig: {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            }
         }
     },
     methods: {
+        addElement() {
+            const newAction = {
+                orario: this.orario,
+                azione: this.azione
+            };
+
+
+            axios.post('./lista.php', newAction, this.postRequestConfig).then(result => {
+                console.log(newAction)
+            });
+        }
 
     },
     mounted() {
-        axios.get('./server.php').then(risultato => {
+
+
+        axios.get('./lista.php').then(risultato => {
             this.toDo = risultato.data;
         })
     }

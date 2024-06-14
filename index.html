@@ -16,6 +16,10 @@
     <div id="app">
         <h1>ToDO</h1>
 
+        <h2>Aggiungi cose da fare:</h2>
+        <input type="time" placeholder="Inserire orario" v-model="orario">
+        <input type="text" placeholder="Inserire Azione" v-model="azione">
+        <button @click="addElement()">Aggiungi</button>
 
         <h2>Lista cose da fare:</h2>
         <ul>
